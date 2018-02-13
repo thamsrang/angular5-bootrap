@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { LoginComponent } from './login/login.component';
-import { DashSidemenuComponent } from './dash-sidemenu/dash-sidemenu.component';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,12 +14,13 @@ import { DashSidemenuComponent } from './dash-sidemenu/dash-sidemenu.component';
     AppHeaderComponent,
     AppFooterComponent,
     LoginComponent,
-    DashSidemenuComponent
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppHeaderComponent, AppComponent, AppFooterComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
