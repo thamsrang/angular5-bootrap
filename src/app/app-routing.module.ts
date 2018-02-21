@@ -10,7 +10,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'sso/login', redirectTo: 'dashboard'},
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'devices', loadChildren: './devices/devices.module#DevicesModule' },
   { path: 'reports', component: ReportsComponent },
+  { path: 'users', loadChildren: './users/users.module#UsersModule' },
   { path: 'sso/logout', redirectTo: '', pathMatch: 'full' }
 ];
 
