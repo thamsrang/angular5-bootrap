@@ -1,3 +1,12 @@
-<p>
-  devices-sidenav works!
-</p>
+<div class="position-fixed">
+  <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a class="nav-link" id="devices-sidenav-list-tab" data-toggle="pill" [routerLink]="['/devices']" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }" role="tab" aria-controls="v-pills-home" aria-selected="true">List Devices</a>
+    <a class="nav-link" id="devices-sidenav-categories-tab" data-toggle="pill" [routerLink]="['categories']" routerLinkActive="active"
+      role="tab" aria-controls="v-pills-profile" aria-selected="false">Device Categories</a>
+    <a class="nav-link" id="devices-sidenav-tags-tab" data-toggle="pill" [routerLink]="['tags']" routerLinkActive="active" role="tab"
+      aria-controls="v-pills-messages" aria-selected="false">Device Tags</a>
+    <a class="nav-link" id="devices-sidenav-settings-tab" data-toggle="pill" [routerLink]="['settings']" routerLinkActive="active"
+      role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+  </div>
+</div>

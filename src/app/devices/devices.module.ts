@@ -6,12 +6,19 @@ import { DevicesSettingsComponent } from './devices-settings/devices-settings.co
 import { DevicesListComponent } from './devices-list/devices-list.component';
 import { DevicesSidenavComponent } from './devices-sidenav/devices-sidenav.component';
 import { DevicesComponent } from './devices.component';
+import { DevicesTagsComponent } from './devices-tags/devices-tags.component';
+import { DevicesCategoriesComponent } from './devices-categories/devices-categories.component';
 
 @NgModule({
   imports: [
     CommonModule,
     DevicesRoutingModule
   ],
-  declarations: [DevicesComponent, DevicesSettingsComponent, DevicesListComponent, DevicesSidenavComponent]
+  declarations: [DevicesComponent,
+                  DevicesSettingsComponent,
+                  DevicesListComponent,
+                  DevicesSidenavComponent,
+                  DevicesTagsComponent,
+                  DevicesCategoriesComponent]
 })
 export class DevicesModule { }
