@@ -7,8 +7,6 @@
     {
       "root": "src",
       "outDir": "docs",
-      "deployUrl": "/angular5-bootrap4",
-      "baseHref": "/angular5-bootrap4/",
       "assets": [
         "assets",
         "favicon.ico"
