@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private router: Router) {
   }
   public isLoginPage () {
     let isLoginPage = false;
-    const path: any = this.activatedRoute.snapshot.url[0].path;
+    const path: any = this.router.url;
     if (path === '/' || path === '/login') {
       isLoginPage = true;
     }

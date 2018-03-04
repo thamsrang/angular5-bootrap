@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,14 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
-  constructor() { }
-
-  submitted = false;
-  // this.data = { name: 'some name' };
-  onSubmit() {
-    this.submitted = true;
-    // this.http.post('http://someurl', JSON.stringify(this.data)).subscribe(...);
+  constructor(private router: Router) {}
+  login() {
+    this.router.navigate(['dashboard']);
   }
-
 }
