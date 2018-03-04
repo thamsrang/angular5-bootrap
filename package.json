@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 8000",
-    "build": "ng build --prod --base-href /angular5-bootrap4/ --deploy-url https://thamsrang.github.io/angular5-bootrap4/",
+    "build": "ng build --prod --base-href //thamsrang.github.io/angular5-bootrap4/ --deploy-url //thamsrang.github.io/angular5-bootrap4/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
