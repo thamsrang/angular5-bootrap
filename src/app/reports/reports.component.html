@@ -1,10 +1,33 @@
 <div class="mt-5">
-  Reports works!
-  <ul>
-    <li>Search Option</li>
-    <li>Last month power consumption</li>
-    <li>Convert Last Month to Valid From & To Date</li>
-    <li>Auto suggestion for typing with predefined reports statements</li>
-    <li>Auto suggestion for typing for unknown report statement</li>
-  </ul>
+  <div class="form-group row justify-content-center">
+    <div class="col-8">
+      <input id="searchReport" class="form-control col-12" type="text" placeholder="Ask me the Reports..." value="Last Month Power Consumption">
+    </div>
+    <button type="submit" class="btn btn-outline-primary col-2">Show Me</button>
+  </div>
+  <div>
+    <h3>
+      <span>Report for:</span> Last Month Power Consumption</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <canvas id="multiChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="mt-2">
+            <canvas id="bubbleChart"></canvas>
+          </div>
+          <div class="mt-4">
+              <canvas id="doughnutChart"></canvas>
+            </div>  
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

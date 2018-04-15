@@ -1,5 +1,94 @@
-<div class="mt-5">
-  <p>
-    settings works!
-  </p>
+<div class="mt-5 row">
+  <div class="col-2">
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="(hashValue == 'change-password')" href="/users/settings#change-password">Change Password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="(hashValue == 'manage-user')" href="/users/settings#manage-user">Manage User</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-10">
+    <div class="bg-light border p-3">
+      <div [hidden]="!(hashValue == 'change-password')">
+        <div>
+          <h5>Change Password</h5>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword2">Confirm Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </div>
+      <div [hidden]="!(hashValue == 'manage-user')">
+        <div>
+          <h5>Manage User</h5>
+        </div>
+        <ul class="list-unstyled">
+          <li class="media">
+            <div class="align-self-start p-5 bg-white mr-2">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Mark Berg</h5>
+              <div>
+                <span>Email:</span> mark@fb.com</div>
+              <div>
+                <span>Mobile:</span> +91-9876543211
+              </div>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-toggle-off"></i> Deative</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-trash-alt"></i> Delete</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope"></i> Reinvite</button>
+            </div>
+          </li>
+          <li class="media my-4">
+            <div class="align-self-start p-5 bg-white mr-2">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Tim Cuckoo</h5>
+              <div>
+                <span>Email:</span> cuckoo@twt.com</div>
+              <div>
+                <span>Mobile:</span> +91-9876543212
+              </div>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-toggle-off"></i> Deative</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-trash-alt"></i> Delete</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope"></i> Reinvite</button>
+            </div>
+          </li>
+          <li class="media">
+            <div class="align-self-start p-5 bg-white mr-2">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Handsome Pichai</h5>
+              <div>
+                <span>Email:</span> handsome@goggl.com</div>
+              <div>
+                <span>Mobile:</span> +91-9876543213
+              </div>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-toggle-off"></i> Deative</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-trash-alt"></i> Delete</button>
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope"></i> Reinvite</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
