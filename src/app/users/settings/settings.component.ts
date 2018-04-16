@@ -9,7 +9,7 @@ import { Router, NavigationEnd, UrlTree, UrlSegmentGroup, UrlSegment, PRIMARY_OU
 })
 export class SettingsComponent implements OnInit {
 
-  @Input() public hashValue: string;
+  hashValue: string;
   constructor(private router: Router) {
 
     router.events.subscribe((val) => {
